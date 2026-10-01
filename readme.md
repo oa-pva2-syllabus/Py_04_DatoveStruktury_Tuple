@@ -1,68 +1,75 @@
 # PVA2 - Programování a vývoj aplikací
-## Cvičení 03: Datové struktury: Entice
+## Cvičení 04: Datové struktury: N-tice (tuple)
 
-### 1
+### Jak řešit
+- Všechny úkoly řešte v souboru `reseni.py`, kde jsou připravená data a proměnné ve tvaru `vysledek = ...`.
+- Místo `...` doplňte své řešení. Názvy proměnných neměňte, podle nich se řešení automaticky vyhodnocuje.
+- Výsledek počítejte z dat v programu (indexem, řezem, funkcí), ne opsáním hodnoty.
+- Po každém `git push` se řešení vyhodnotí a výsledek najdete v pull requestu **Feedback**.
+  Čísla požadavků odpovídají číslům úkolů níže.
 
-```
+```python
 alphabet = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
             'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z')
 ```
 
-Vypočítejte délku ntice `alphabet`
+### 1
+Délku ntice `alphabet` uložte do `delka`.
 
 ### 2
-1. Deklarujte jednoprvkovou ntici s hodnotou `onlyOne`.
+1. Deklarujte jednoprvkovou ntici `onlyOne` s hodnotou `'Python'`.
 2. Vytiskněte uživateli její hodnotu a datový typ.
 
 ### 3
-Vytvořte ntici prvků: Strojvedoucí, Vlakvedoucí, Vozmistr
+Do `profese` uložte ntici prvků: `Strojvedoucí`, `Vlakvedoucí`, `Vozmistr`.
 
 ### 4
-`souradnice = (11,22)`
+`souradnice = (11, 22)`
 
-1. Přidejte do ntice `souradnice` hodnotu `33`
-2. Odeberte první prvek
+1. Přidejte do ntice `souradnice` hodnotu `33`.
+2. Odeberte první prvek.
 
-Řešení a odůvodnění napište ve formě komentáře
-
+Ntici nelze změnit – vytvořte novou a uložte ji zpět do `souradnice`. Ve formě komentáře vysvětlete, proč to jinak nejde.
 
 ### 5
-Z ntice `alphabet` zbrazte uživateli:
-* celou ntici
-* první prvek
-* druhý prvek
-* poslední prvek
-* předposlední prvek
-* každý třetí prvek
+Z ntice `alphabet` uložte první prvek do `prvni` a druhý prvek do `druhy`.
 
 ### 6
-```
-fruits = ['jablka', 'banány', 'hrušky', 'maliny']
-separator = ' a mám rád '
-```
-Napište skript za využití adekvátních funkcí, který bude tvořit očekávaný výstup: 
-
-`Mám rád jablka a mám rád banány a mám rád hrušky a mám rád maliny`
+Z ntice `alphabet` uložte pomocí záporných indexů poslední prvek do `posledni` a předposlední prvek do `predposledni`.
 
 ### 7
-Z ntice `alphabet` zbrazte uživateli:
-* prvních pět prvků
-* posledních pět prvků
-* první půlku prvků
+Z ntice `alphabet` uložte každý třetí prvek (začínaje prvním) do `kazdyTreti`.
 
-### 8 
-```
-designPatterns = ('Adapter', 'Repository', 'Facade', 'Factory')
-```
-
-Z ntice `designPatterns` nalezněte index hodnoty `repository` a 'Factory'.
-
+### 8
+Z ntice `alphabet` uložte prvních pět prvků do `prvnichPet`.
 
 ### 9
-1. Deklarujte ntici s prvky proměnné x, y, z. 
-2. Hodnoty bude zadávat uživatel. 
-3. Ntici vytiskněte uživateli
-4. Spočítejte, kolikrát se opakuje hodnota x, y a z
-5. Zobrazte uživateli text `Byly zadány hodnoty x: ?,y: ?, z: ? a jejich součet je: ?`
+Z ntice `alphabet` uložte posledních pět prvků do `poslednichPet`.
 
- 
+### 10
+Z ntice `alphabet` uložte první polovinu prvků do `prvniPulka`. Polovinu spočítejte z délky ntice.
+
+### 11
+`datum = (2026, 10, 1)`
+
+Rozbalte ntici `datum` do proměnných `rok`, `mesic` a `den` jedním přiřazením.
+
+### 12
+`designPatterns = ('Adapter', 'Repository', 'Facade', 'Factory')`
+
+1. Index hodnoty `Repository` uložte do `indexRepository` a index hodnoty `Factory` do `indexFactory`.
+2. Ve formě komentáře napište, co se stane, když budete hledat index hodnoty `repository` (malým písmenem), a proč.
+
+### 13
+1. Hodnoty proměnných `x`, `y`, `z` bude zadávat uživatel (`input()`).
+2. Deklarujte ntici `hodnoty` s prvky `x`, `y`, `z` a vytiskněte ji.
+3. Spočítejte, kolikrát se v ntici `hodnoty` opakuje hodnota `x`, `y` a `z`, a vytiskněte:
+
+   `Počet výskytů – x: 2, y: 1, z: 2`
+
+### 14
+Zobrazte uživateli text:
+
+`Byly zadány hodnoty x: 1, y: 2, z: 1 a jejich součet je: 4`
+
+(Čísla ve vzorových výstupech platí pro vstup `1`, `2`, `1`.)
